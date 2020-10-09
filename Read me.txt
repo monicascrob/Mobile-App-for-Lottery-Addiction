@@ -1,0 +1,25 @@
+# Mobile app for Lottery Addiction
+
+A medical institute for preventing and treating gambling addiction wants to build a dedicated mobile app to help 
+lottery addicts better estimate their chances of winning. They have a team of engineers to build it, 
+but need help creating the logical core of the app and calculate probabilities.
+
+For the first version of the app, they want us to focus on the 6/49 lottery and help users answer the following 
+questions:
+ - What is the probability of winning the big prize with a single ticket?
+ - What is the probability of winning the big prize if we play 40 different tickets (or any number)?
+ - What is the probability of having at least five (or four, or htree, or two) winning numbers on a single ticket?
+ 
+The institute wants us to use data coming from the national 6/49 lottery game in Canada. The data set has data 
+for 3665 drawings from 1982 to 2018, [here](https://www.kaggle.com/datascienceai/lottery-dataset)
+
+
+We wrote four main functions:
+
+- one_ticket_probability() — calculates the probability of winning the big prize with a single ticket
+- check_historical_occurrence() — checks whether a certain combination has occurred in the Canada lottery data set
+- multi_ticket_probability() — calculates the probability for any number of tickets between 1 and 13,983,816
+- probability_less_6() - takes in an integer between 2 and 5 and prints information about the chances of winning 
+depending on the value of that integer
+
+The next step would be getting feedback about our first app and find ways to improve it or add new features.
